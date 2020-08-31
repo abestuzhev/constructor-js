@@ -1,0 +1,25 @@
+{
+  "name": "constructor",
+  "version": "1.0.0",
+  "description": "pure javascript site constructor",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "Aleksey Bestuzhev <aleksey.bestuzhev@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^4.2.2",
+    "html-webpack-plugin": "^4.4.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
