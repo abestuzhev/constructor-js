@@ -1,3 +1,12 @@
 import './styles/main.css';
+import {model} from './model'
+import {template} from "./template";
 
-console.log('I am index.js');
+const $site = document.querySelector('#site');
+model.forEach(block => {
+   const generate = template[block.type];
+
+   $site.insertAdjacentHTML('beforeend', generate(block))
+});
+
+
