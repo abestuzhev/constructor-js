@@ -1,7 +1,6 @@
 import {row, col} from "./utils";
 
 
-
 function title(block){
    const {tag, styles} = block.options;
    return row(col(
