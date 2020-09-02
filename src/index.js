@@ -1,10 +1,17 @@
 import './styles/main.css';
 import {model} from './model'
-import {template} from "./template";
+import {Site} from "./classes/Site";
+import {Sidebar} from "./classes/Sidebar";
 
-const $site = document.querySelector('#site');
-model.forEach(block => {
-   $site.insertAdjacentHTML('beforeend', block.toHTML())
-});
+const $site = new Site('#site');
+
+const updateHandler = newBlock => {
+   model.push(newBlock);
+   $site.render(model);
+};
+
+new Sidebar('#panel', updateHandler);
+
+$site.render(model);
 
 

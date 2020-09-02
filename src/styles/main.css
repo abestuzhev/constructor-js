@@ -21,8 +21,13 @@
     overflow-y: auto;
 }
 
-.btn {
+.content .btn {
     border-radius: 6px;
     background-color: #eee;
     color: #333;
+}
+
+.form {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 20px;
 }

@@ -1,11 +1,16 @@
 import { Block, TextBlock, TitleBlock, TextColumnBlock, ButtonBlock } from "./classes/blocks";
+import {css} from "./utils";
 
 export const model = [
    new TitleBlock(
       'Some title on page',
       {
          tag: 'h2',
-         styles: 'background-color: #eee; border-radius: 10px; margin-bottom: 20px'
+         styles: css({
+            'background-color': '#eee',
+            'border-radius': '10px',
+            'margin-bottom': '20px'
+         })
       }
    ),
    new TextBlock(
